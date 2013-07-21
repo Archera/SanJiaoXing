@@ -18,6 +18,10 @@
 		68FD5B69178E8DA80002C39F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 68FD5B68178E8DA80002C39F /* Default-568h@2x.png */; };
 		68FD5B6C178E8DA80002C39F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FD5B6B178E8DA80002C39F /* ViewController.m */; };
 		68FD5B6F178E8DA80002C39F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68FD5B6D178E8DA80002C39F /* ViewController.xib */; };
+		68FD5B77178E8DBE0002C39F /* DrawSJX.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FD5B76178E8DBE0002C39F /* DrawSJX.m */; };
+		68FDA6F5178FEC3A0003B209 /* DrawArrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDA6F4178FEC3A0003B209 /* DrawArrow.m */; };
+		68FDA6F8178FEC530003B209 /* DrawDashLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDA6F7178FEC530003B209 /* DrawDashLine.m */; };
+		68FDA6FB178FEC920003B209 /* CalculationPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FDA6FA178FEC920003B209 /* CalculationPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,14 @@
 		68FD5B6A178E8DA80002C39F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		68FD5B6B178E8DA80002C39F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		68FD5B6E178E8DA80002C39F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		68FD5B75178E8DBE0002C39F /* DrawSJX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawSJX.h; sourceTree = "<group>"; };
+		68FD5B76178E8DBE0002C39F /* DrawSJX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawSJX.m; sourceTree = "<group>"; };
+		68FDA6F3178FEC3A0003B209 /* DrawArrow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawArrow.h; sourceTree = "<group>"; };
+		68FDA6F4178FEC3A0003B209 /* DrawArrow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawArrow.m; sourceTree = "<group>"; };
+		68FDA6F6178FEC530003B209 /* DrawDashLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawDashLine.h; sourceTree = "<group>"; };
+		68FDA6F7178FEC530003B209 /* DrawDashLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawDashLine.m; sourceTree = "<group>"; };
+		68FDA6F9178FEC920003B209 /* CalculationPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalculationPoint.h; sourceTree = "<group>"; };
+		68FDA6FA178FEC920003B209 /* CalculationPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalculationPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +95,15 @@
 		68FD5B58178E8DA80002C39F /* SanJiaoXing */ = {
 			isa = PBXGroup;
 			children = (
+				68FDA6EF178FEBE80003B209 /* DrawingView */,
 				68FD5B61178E8DA80002C39F /* AppDelegate.h */,
 				68FD5B62178E8DA80002C39F /* AppDelegate.m */,
 				68FD5B6A178E8DA80002C39F /* ViewController.h */,
 				68FD5B6B178E8DA80002C39F /* ViewController.m */,
 				68FD5B6D178E8DA80002C39F /* ViewController.xib */,
 				68FD5B59178E8DA80002C39F /* Supporting Files */,
+				68FD5B75178E8DBE0002C39F /* DrawSJX.h */,
+				68FD5B76178E8DBE0002C39F /* DrawSJX.m */,
 			);
 			path = SanJiaoXing;
 			sourceTree = "<group>";
@@ -105,6 +120,19 @@
 				68FD5B68178E8DA80002C39F /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		68FDA6EF178FEBE80003B209 /* DrawingView */ = {
+			isa = PBXGroup;
+			children = (
+				68FDA6F9178FEC920003B209 /* CalculationPoint.h */,
+				68FDA6FA178FEC920003B209 /* CalculationPoint.m */,
+				68FDA6F3178FEC3A0003B209 /* DrawArrow.h */,
+				68FDA6F4178FEC3A0003B209 /* DrawArrow.m */,
+				68FDA6F6178FEC530003B209 /* DrawDashLine.h */,
+				68FDA6F7178FEC530003B209 /* DrawDashLine.m */,
+			);
+			path = DrawingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +204,10 @@
 				68FD5B5F178E8DA80002C39F /* main.m in Sources */,
 				68FD5B63178E8DA80002C39F /* AppDelegate.m in Sources */,
 				68FD5B6C178E8DA80002C39F /* ViewController.m in Sources */,
+				68FD5B77178E8DBE0002C39F /* DrawSJX.m in Sources */,
+				68FDA6F5178FEC3A0003B209 /* DrawArrow.m in Sources */,
+				68FDA6F8178FEC530003B209 /* DrawDashLine.m in Sources */,
+				68FDA6FB178FEC920003B209 /* CalculationPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +328,7 @@
 				68FD5B74178E8DA80002C39F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
